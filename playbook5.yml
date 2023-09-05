@@ -1,0 +1,12 @@
+---
+- name: Create file/dir from remote server
+  hosts: all
+  tasks:
+    - name: Create file/dir
+      file:
+        name: /tmp/file3
+        state: touch
+        mode: 770
+        owner: sai
+        group: root
+...

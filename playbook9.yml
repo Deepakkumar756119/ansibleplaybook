@@ -1,0 +1,10 @@
+---
+- name: Install firewall using hostscope variable
+  hosts: webserver
+  tasks:
+    - name: Install firwall
+      apt:
+        name: "{{a}}"
+        state: "{{b}}"
+        update_cache: "{{c}}"
+...
