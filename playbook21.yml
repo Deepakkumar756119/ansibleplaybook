@@ -1,0 +1,17 @@
+---
+- name: Check if file having execute parmission if so delete it
+  hosts: all
+  tasks:
+    - name: Capture inof about file
+      stat:
+        path: /tmp/file1
+      register: b
+    - name: Display output avove modules
+      debug:
+        var: b
+    - name: Delete file if it is executable
+      file:
+        name: /tmp/file1
+        state: absent
+      when: b.stat.executable == true
+...

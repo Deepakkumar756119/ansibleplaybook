@@ -6,7 +6,7 @@
       file:
         name: /tmp/file3
         state: touch
-        mode: 770
-        owner: sai
+        mode: 777
+        owner: ubuntu
         group: root
 ...
