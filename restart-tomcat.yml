@@ -1,0 +1,5 @@
+---
+- name: Restart tomcat9 and tomcat9-admin
+  service: 
+    name: "{{a}}"
+    state: "{{k}}"

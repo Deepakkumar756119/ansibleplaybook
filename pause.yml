@@ -1,0 +1,4 @@
+--- 
+- name: Pause 1 minute
+  pause: 
+    minutes: "{{l}}"
