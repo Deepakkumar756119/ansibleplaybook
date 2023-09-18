@@ -1,0 +1,10 @@
+---
+- name: Working on a docker container
+  hosts: all
+  tasks:
+    - name: Create a tomcat container
+      docker_container:
+        name: apiserver
+        image: tomee
+
+
