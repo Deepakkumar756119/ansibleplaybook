@@ -6,5 +6,13 @@
       docker_container:
         name: apiserver
         image: tomee
+    - name: Stoped tomcat cantainer
+      docker_container:
+        name: apiserver
+        state: stopped
+    - name: Delete the tomcat container
+      docker_container:
+        name: apiserver
+        state: absent 
 
 
